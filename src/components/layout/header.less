@@ -1,0 +1,137 @@
+.header{
+  width: 100%;
+  height: 70px;
+  background: white;
+  line-height: 70px;
+  font-size: 15px;
+}
+
+.menu-item{
+  float: left; 
+  padding: 0 10px;
+  cursor: pointer;
+  color: #323232;
+}
+
+.menu-item-active{
+  color:#1a5bf5;
+}
+
+.menu-item:hover{
+  background: #1a2847;
+  color: white;
+}
+
+.menu-item-hover{
+  background: #1a2847;
+  color: white;  
+}
+
+:global .ant-layout-header{
+  height: 46px;
+  padding: 0 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.hidden{
+  display: none;
+}
+
+.transparent{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-banner{
+  position: absolute;
+  top: 69px;
+  left: 0;
+  width: 100%;
+  background: #1a2847;
+  min-height: 100px;
+  transition: 0.2s;
+  z-index: 10;
+  line-height: 45px;
+}
+
+.menu-banner ul{
+  list-style: none;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 70%;
+}
+
+.menu-banner ul a{
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-banner ul a li{
+  max-width: 170px;
+  border-radius: 7px;
+  background: #515c73;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* font-weight: bold; */
+}
+
+.menu-banner ul a li:hover{
+  transform: scale(1.07);
+  border: 1px solid white;
+  box-shadow: 0 0 10px white;
+  transition: 0.2s;
+}
+
+.small-menu-button{
+  display: none;
+}
+
+@media screen and (max-width:891px){
+  .left-menu{
+    display: none;
+  } 
+
+
+  .small-menu-button{
+    float: right;
+    display: block;
+  }
+  
+  .small-menu{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: calc(100% - 70px);
+    width: 100%;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .small-menu-panel{
+    background: white;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  
+  .small-menu-item{
+    border-bottom: 1px solid dodgerblue;
+    padding-left: 10px;
+    position: relative;
+  }
+  
+  .small-menu-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: dodgerblue;
+  }
+}
+
+.user {
+  float: right;
+}
