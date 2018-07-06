@@ -1,4 +1,4 @@
-<h2 align="center">仓库管理系统前端</h2>
+<h2 align="center">dva项目模板</h2>
 
 # Quick Start
 
